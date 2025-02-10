@@ -19,7 +19,7 @@ public class BookingService {
 
     public static int BookingID = 0;
     private static BookingService bookingServiceObject;
-    BookingRepo bookingtable;
+    BookingRepository bookingtable;
     SeatRepository seatTable;
 
     BookingService() {
