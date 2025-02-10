@@ -1,20 +1,18 @@
 package org.example.services;
 
-import org.example.database.DatabaseCollection;
-import org.example.database.ScreenRepo;
+import org.example.repository.DatabaseCollection;
+import org.example.repository.ScreenRepository;
 import org.example.enums.SeatType;
 import org.example.models.Screen;
 import org.example.models.ScreenSeat;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Objects;
 
 public class ScreenService {
 
 
     private static ScreenService screenServiceObject;
-    ScreenRepo screenTable;
+    ScreenRepository screenTable;
 
     ScreenService() {
         this.screenTable = DatabaseCollection.instance().ScreenTable;

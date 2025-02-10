@@ -1,11 +1,11 @@
-package org.example.database;
+package org.example.repository;
 
 
 import org.example.models.Movie;
 
 import java.util.HashMap;
 
-public class MovieRepo {
+public class MovieRepository {
 
     public HashMap<String, Movie> MovieTable=new HashMap<>();
 

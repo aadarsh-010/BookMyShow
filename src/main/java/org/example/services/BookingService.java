@@ -1,9 +1,9 @@
 package org.example.services;
 
-import org.example.database.BookingRepo;
+import org.example.repository.BookingRepository;
 
-import org.example.database.DatabaseCollection;
-import org.example.database.SeatRepo;
+import org.example.repository.DatabaseCollection;
+import org.example.repository.SeatRepository;
 
 import org.example.enums.BookingStatus;
 import org.example.enums.SeatBookingStatus;
@@ -11,7 +11,6 @@ import org.example.models.Booking;
 import org.example.services.paymentservice.*;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -21,7 +20,7 @@ public class BookingService {
     public static int BookingID = 0;
     private static BookingService bookingServiceObject;
     BookingRepo bookingtable;
-    SeatRepo seatTable;
+    SeatRepository seatTable;
 
     BookingService() {
         bookingtable = DatabaseCollection.instance().BookingTable;

@@ -1,7 +1,7 @@
 package org.example.services;
 
-import org.example.database.DatabaseCollection;
-import org.example.database.MovieRepo;
+import org.example.repository.DatabaseCollection;
+import org.example.repository.MovieRepository;
 
 import org.example.models.Movie;
 
@@ -12,7 +12,7 @@ import java.util.List;
 public class MovieService {
 
     private static MovieService movieServiceObject;
-    MovieRepo movietable;
+    MovieRepository movietable;
 
     MovieService() {
         movietable = DatabaseCollection.instance().MovieTable;

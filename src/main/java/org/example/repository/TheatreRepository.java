@@ -1,10 +1,10 @@
-package org.example.database;
+package org.example.repository;
 
 import org.example.models.Theatre;
 
 import java.util.HashMap;
 
-public class TheatreRepo {
+public class TheatreRepository {
 
 
     public HashMap<String, Theatre> Theatredb=new HashMap<>();

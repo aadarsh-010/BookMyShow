@@ -1,10 +1,10 @@
-package org.example.database;
+package org.example.repository;
 
 import org.example.models.Booking;
 
 import java.util.HashMap;
 
-public class BookingRepo {
+public class BookingRepository {
     public HashMap<String, Booking> BookingTable=new HashMap<>();
 
     public Booking getBooking(String bid) {

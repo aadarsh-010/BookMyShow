@@ -1,4 +1,4 @@
-package org.example.database;
+package org.example.repository;
 
 import org.example.models.user.Creator;
 import org.example.models.user.Customer;
@@ -6,7 +6,7 @@ import org.example.models.user.Customer;
 import java.util.HashMap;
 import java.util.Objects;
 
-public class UserRepo {
+public class UserRepository {
 
     public HashMap<String, Creator> creatorDB=new HashMap<>();
     public HashMap<String, Customer> customerDB=new HashMap<>();

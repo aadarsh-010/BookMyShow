@@ -1,15 +1,14 @@
 package org.example.services;
 
-import org.example.database.DatabaseCollection;
-import org.example.database.TheatreRepo;
+import org.example.repository.DatabaseCollection;
+import org.example.repository.TheatreRepository;
 
 import org.example.models.Theatre;
-import java.util.ArrayList;
 
 public class TheaterService {
 
     private static TheaterService theaterServiceObject;
-    TheatreRepo theatreTable;
+    TheatreRepository theatreTable;
 
     TheaterService() {
         this.theatreTable = DatabaseCollection.instance().TheatreTable;

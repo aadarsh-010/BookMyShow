@@ -1,11 +1,11 @@
-package org.example.database;
+package org.example.repository;
 
 import org.example.models.Show;
 import org.example.models.ShowSeats;
 
 import java.util.HashMap;
 
-public class ShowRepo {
+public class ShowRepository {
 
     public HashMap<String, Show> Showdb=new HashMap<>();
     public HashMap<String, ShowSeats> showSeatdb=new HashMap<>();

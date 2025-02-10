@@ -1,12 +1,11 @@
-package org.example.database;
+package org.example.repository;
 
 import org.example.models.Screen;
 import org.example.models.ScreenSeat;
-import org.example.models.Theatre;
 
 import java.util.HashMap;
 
-public class ScreenRepo {
+public class ScreenRepository {
     public HashMap<String, Screen> ScreenTable=new HashMap<>();
     public HashMap<String, ScreenSeat> ScreenSeatTable=new HashMap<>();
 

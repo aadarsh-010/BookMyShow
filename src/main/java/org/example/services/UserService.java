@@ -1,7 +1,7 @@
 package org.example.services;
 
-import org.example.database.DatabaseCollection;
-import org.example.database.UserRepo;
+import org.example.repository.DatabaseCollection;
+import org.example.repository.UserRepository;
 import org.example.models.user.Creator;
 import org.example.models.user.Customer;
 
@@ -13,7 +13,7 @@ import java.util.Objects;
 public class UserService {
 
     private static UserService userServiceObject;
-    UserRepo usertable;
+    UserRepository usertable;
 
     UserService() {
         usertable = DatabaseCollection.instance().UserTable;

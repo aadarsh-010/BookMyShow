@@ -1,9 +1,9 @@
 package org.example.services;
 
-import org.example.database.DatabaseCollection;
-import org.example.database.SeatRepo;
+import org.example.repository.DatabaseCollection;
+import org.example.repository.SeatRepository;
 
-import org.example.database.ShowRepo;
+import org.example.repository.ShowRepository;
 
 import org.example.enums.SeatBookingStatus;
 import org.example.enums.SeatType;
@@ -21,8 +21,8 @@ public class ShowService {
     public static int globalseatid = 1;
 
     private static ShowService ShowServiceObject;
-    ShowRepo showTable;
-    SeatRepo seatTable;
+    ShowRepository showTable;
+    SeatRepository seatTable;
 
     ShowService() {
         this.showTable = DatabaseCollection.instance().ShowTable;
