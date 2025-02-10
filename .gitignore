@@ -1,0 +1,6 @@
+.gradle/
+gradle
+src/test/
+src/main/resourcesgrg/
+build
+.DS_Store
