@@ -2,5 +2,5 @@
 gradle
 src/test/
 src/main/resourcesgrg/
-build/
+build
 .DS_Store
