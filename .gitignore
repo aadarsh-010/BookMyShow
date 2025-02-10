@@ -1,6 +1,6 @@
 .gradle/
-.idea/modules
-gradle/
+.idea
+gradle
 src/test/
 src/main/resourcesgrg/
 build/
