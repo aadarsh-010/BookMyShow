@@ -1,6 +1,7 @@
-.gradle
-.idea
-gradle
-src/test
-src/main/resourcesgrg
-build
+.gradle/
+.idea/modules
+gradle/
+src/test/
+src/main/resourcesgrg/
+build/
+.DS_Store
